@@ -7,6 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .header {
@@ -18,12 +19,11 @@ body {
   h1 {
     padding-bottom: 40px;
   }
-  /* border-bottom: 8px solid hsla(0, 0%, 60%, 1); */
 }
 
 .intro-chunk {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  max-width: 360px;
 }
 
 .main {
@@ -38,8 +38,9 @@ body {
     background-color: hsla(45, 100%, 50%, 1);
     border-bottom: 8px solid hsla(45, 100%, 40%, 1);
     width: fit-content;
+    margin: 0px;
     margin-left: -32px;
-    padding-left: 16px;
+    padding-left: 32px;
     padding-right: 16px;
   }
 }
@@ -47,17 +48,12 @@ body {
 .card {
   background-color: hsla(0, 0%, 100%, 1);
   border-bottom: 8px solid hsla(0, 0%, 60%, 1);
+  padding-top: 4px;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.max-width-wrapper-header {
-  max-width: 352px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.max-width-wrapper-card {
+.max-width-wrapper {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
